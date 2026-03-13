@@ -1,0 +1,35 @@
+name: midriftcashier
+description: "MidriftCashier - Cash Short Puzzle Solver"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+  shared_preferences: ^2.3.2
+  intl: ^0.19.0
+  cupertino_icons: ^1.0.8
+  fl_chart: ^0.69.0          # ← NEW: For Line + Beautiful 3D-style Pie Charts
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
+    - assets/images/
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_version: 21
